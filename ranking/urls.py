@@ -30,6 +30,6 @@ urlpatterns = [
     path('' ,include('youtube.urls'), name="youtube"),
     path('' ,include('about_us.urls'), name="about_us"),
     path('' ,include('contact_us.urls'), name="contact_us"),
-    # url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
-    # url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
+    url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
+    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
 ]
